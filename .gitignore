@@ -22,7 +22,7 @@ public class ConvertInchToCm {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //variables for the program
+        //variable for the program :P
         double inputInches;
         
         //display a message asking for inches
