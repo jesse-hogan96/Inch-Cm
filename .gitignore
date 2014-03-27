@@ -1,6 +1,35 @@
-*.class
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package convertinchtocm;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+//import the scanner
+import java.util.*;
+
+/**
+ *
+ * @author 041401065
+ */
+public class ConvertInchToCm {
+    
+    //set the console variable
+    static Scanner Console = new Scanner(System.in);
+    //set conversion amount
+    final static double CONVERSION_RATE = 2.54;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //variables for the program
+        double inputInches;
+        
+        //display a message asking for inches
+        System.out.println("Please enter the amount of inches");
+        inputInches = Console.nextDouble();
+        
+        //display cm amount
+        System.out.println("You entered " + inputInches + "\nWhich converts to " + (inputInches * CONVERSION_RATE) + " cm");
+    }
+}
